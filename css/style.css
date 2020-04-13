@@ -18,13 +18,15 @@
  
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-image: url("../images/football_767.jpg");
+  background-size: cover;
+  background-image: url("../images/football_1920.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: center 0;
   position: relative;
-  justify-content: center;
   }
   
 .header::after {
@@ -37,66 +39,58 @@
   right: 0;
   left: 0;
 }
-.header-container { 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+
+.header-logo {
   position: relative;
   z-index: 1;
-  box-sizing: border-box;
-  margin-top: 30px;
-  margin-bottom: 135px;
-  justify-content: center;
- }
-.header-logo {
- width: 135px;
- fill: #ffffff;
- } 
+  width: 190px;
+  fill: #ffffff;
+  margin-top: 43px;
+  } 
 .header-title {
- margin-top: 140px;
+ position: relative;
+ z-index: 1;	
+ margin-top: 350px;
  text-transform: uppercase;
  }
 .header_label1 {
  color: #ffffff;	
- font-size: 20px;
+ font-size: 65px;
  display: block;	
 }
 .header_label2 {
- margin-top: 25px;
- margin-left: 65px;
  color: #ffffff;	
- font-size: 20px;
+ font-size: 65px;
  display: block;	
  }
 
-.header_label3 {
- margin-left: 65px;
- margin-top: 10px;	
- color: #ffffff;	
- font-size: 20px;
- display: block;
- }
 .buttons {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  margin-top: 90px;
+  margin-top: 220px;
+  margin-bottom: 105px;
 }
 .button {
   background-color: #5e42b0;
   display: block;
-  width: 300px;
-  height: 35px;
+  width: 310px;
+  height: 80px;
   border-radius: 30px;
-  margin-bottom: 15px;	
+    
+ }
+.button:first-child {
+  margin-right: 50px; 
 }
-.btn apple-button {
+.btn-button {
  text-decoration: none;	
  }
 .apple-logo {
- width: 21px;
- height: 21px;
+ width: 50px;
+ height: 50px;
  fill: #ffffff;
 }
+
 .button-info{
   display: flex;
   padding-left: 100px;
@@ -114,31 +108,12 @@
   color: #ffffff;
   font-size: 12px;
 }
-.icon-text appstore{
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align:  left;
-  color: #ffffff;
-  font-size: 12px;
-}
-.athletes {
-  display: flex;
-  width: 100%;
-  background-image: url("../images/footballer_192.png");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center 0;
-  position: relative;
-  justify-content: center;
-  }
-.athletes::after {
-  content: "";
-  position: absolute;
-  background-color: #ffffff;
-  opacity: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.icon-text appstore2 {
+  font-weight: bold;
 }
 
+.google-logo {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+}
