@@ -1,0 +1,108 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+  font-family: OpenSans;
+    src: url(fonts/OpenSans-Bold.woff);
+    font-weight: 900;
+    font-style: normal;
+  }
+  body {
+    margin: 0;
+    font-family: OpenSans, Arial, san-serif;
+    overflow-x: hidden;
+  }
+ 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/football_1920.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  position: relative;
+  }
+  
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #191d3c;
+  opacity: 0.9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-logo {
+  position: relative;
+  z-index: 1;
+  width: 190px;
+  fill: #ffffff;
+  margin-top: 43px;
+  } 
+.header-title {
+ position: relative;
+ z-index: 1;	
+ margin-top: 350px;
+ text-transform: uppercase;
+ }
+.header_label1, .header_label2 {
+ color: #ffffff;	
+ font-size: 90px;
+ font-weight: bold;
+ line-height: 1.111;
+ display: block;	
+}
+.header_label2 {
+ margin-left: 450px;	
+ }
+
+.buttons {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-top: 220px;
+  margin-bottom: 105px;
+}
+.button {
+  background-color: #5e42b0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 80px;
+  border-radius: 38px;
+  }
+.button:first-child {
+  margin-right: 50px; 
+}
+
+.apple-logo {
+ width: 50px;
+ height: 50px;
+ fill: #ffffff;
+}
+
+.icon-text-appstore, .icon-text-appstore2, .icon-text-google, .icon-text-google2 {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+ }
+.icon-text-appstore2, .icon-text-google2 {
+  font-weight: bold;
+  }	
+
+.google-logo {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+}
