@@ -53,15 +53,15 @@
  margin-top: 350px;
  text-transform: uppercase;
  }
-.header_label1 {
+.header_label1, .header_label2 {
  color: #ffffff;	
- font-size: 65px;
+ font-size: 90px;
+ font-weight: bold;
+ line-height: 1.111;
  display: block;	
 }
 .header_label2 {
- color: #ffffff;	
- font-size: 65px;
- display: block;	
+ margin-left: 450px;	
  }
 
 .buttons {
@@ -73,44 +73,33 @@
 }
 .button {
   background-color: #5e42b0;
-  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 310px;
   height: 80px;
-  border-radius: 30px;
-    
- }
+  border-radius: 38px;
+  }
 .button:first-child {
   margin-right: 50px; 
 }
-.btn-button {
- text-decoration: none;	
- }
+
 .apple-logo {
  width: 50px;
  height: 50px;
  fill: #ffffff;
 }
 
-.button-info{
-  display: flex;
-  padding-left: 100px;
-  margin-top: 5px;
- }
-.icon-information{
- display: flex;
- flex-direction: column;
- margin-left: 7px;
- }
-.icon-text{
+.icon-text-appstore, .icon-text-appstore2, .icon-text-google, .icon-text-google2 {
   text-transform: uppercase;
   text-decoration: none;
-  text-align:  left;
   color: #ffffff;
-  font-size: 12px;
-}
-.icon-text appstore2 {
+  font-size: 14px;
+ }
+.icon-text-appstore2, .icon-text-google2 {
   font-weight: bold;
-}
+  }	
 
 .google-logo {
   width: 50px;
