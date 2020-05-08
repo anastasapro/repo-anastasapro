@@ -15,19 +15,32 @@
     font-family: OpenSans, Arial, san-serif;
     overflow-x: hidden;
   }
- 
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-size: cover;
-  background-image: url("../images/football_1920.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: center 0;
   position: relative;
   }
+@media (min-width: 961px) {
+ .header {background-image: url("../images/football_1920.jpg");		
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+ .header {
+  background-image: url("../images/football_1280.jpg");
+  }
+}
+@media (max-width: 640px) {
+.header {
+  background-image: url("../images/football_767.jpg");
+  }
+}
   
 .header::after {
   content: "";
@@ -53,7 +66,7 @@
  margin-top: 350px;
  text-transform: uppercase;
  }
-.header_label1, .header_label2 {
+.header_label1, .header_label2, .header_label3 {
  color: #ffffff;	
  font-size: 90px;
  font-weight: bold;
@@ -61,9 +74,9 @@
  display: block;	
 }
 .header_label2 {
- margin-left: 450px;	
+  margin-left: 450px;	
  }
-
+@media (min-width: 641px){	
 .buttons {
   position: relative;
   z-index: 1;
@@ -84,7 +97,6 @@
 .button:first-child {
   margin-right: 50px; 
 }
-
 .apple-logo {
  width: 50px;
  height: 50px;
@@ -113,19 +125,139 @@
   height: 50px;
   fill: #ffffff;
 }
+}
+@media (max-width: 640px){	
+.buttons {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  margin-bottom: 85px;
+  }
+ .button {
+  background-color: #5e42b0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 35px;
+  border-radius: 38px;	 
+ }
+ .button:first-child {
+  margin-bottom: 15px; 
+  }
+  .apple-logo {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+  padding-bottom: 10px;
+  }
+  .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+ }
+
+ .icon-text-appstore, .icon-text-appstore2, .icon-text-google, .icon-text-google2 {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 8px;
+ }
+.icon-text-appstore2, .icon-text-google2 {
+  font-weight: bold;
+  }	
+
+ .google-logo {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+}
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.footballer {
+  position: absolute;
+  width: 30%;
+  margin-left: 20%;
+  margin-top: 2%;
+  }
+
+.athletes-main {
+  padding-left: 1040px;
+  padding-bottom: 15px;
+}
+.main-tiitle {
+  font-size: 88px;
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  line-height: 0.75;
+ }
+.description-tiitle {
+  font-size: 36px;
+  color: rgb(193, 193, 193);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.958;
+ }
+.description-content {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+
+.tiitle-number {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.tiitle-number::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  background-color: rgb(94, 66, 176);
+  position: absolute;
+  width: 21px;
+  height: 5px;
+}
+.players-main {
+  margin-left: 200px;
+}
+
 
 .footer {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-size: cover;
-  background-image: url("../images/game_1280.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: center 0;
   position: relative;
   }
+@media (min-width: 961px) {
+ .footer {
+	 background-image: url("../images/game_1920.jpg");		
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+ .footer {
+	 background-image: url("../images/game_1280.jpg");		
+  }
+}
+@media (max-width: 640px) {
+ .footer {
+	 background-image: url("../images/game_767.jpg");		
+  }
+}
   
 .footer::after {
   content: "";
@@ -146,7 +278,6 @@
   width: 1000px;
 }
 .button-logo {
-  background-image: url(/svg/surface_logo.svg);
   width: 130px;
   height: 130px;
   border: none;
@@ -157,7 +288,8 @@
   background-position: center center;
   vertical-align: top;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
+  fill: #ffffff;
  }
 .footer-titles {
   display: flex;
